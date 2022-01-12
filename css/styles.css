@@ -553,7 +553,7 @@ bg-тёмно серый---2F303A
   margin-right: 30px;
 }
 
-.team-social-list {
+.team-social {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -565,11 +565,11 @@ bg-тёмно серый---2F303A
   /* padding-top: 16px; */
 }
 
-.team-social-list .list-icon-item:not(:last-child) {
+.team-social .team-social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-social-link {
+.team-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -582,12 +582,12 @@ bg-тёмно серый---2F303A
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icons-bg {
+.team-social--icons-bg {
   --color5: currentColor;
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
+.team-social__link:hover,
+.team-social__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-title-color);
 }
