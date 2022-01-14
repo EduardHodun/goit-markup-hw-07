@@ -617,10 +617,6 @@ bg-тёмно серый---2F303A
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* width: calc((100% - 150px) / 6); */
-  /* margin-right: 30px;
-  margin-bottom: 30px; */
 }
 
 .klients-list__item:not(:last-child) {
