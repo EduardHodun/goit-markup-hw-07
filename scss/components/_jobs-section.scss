@@ -20,12 +20,12 @@
   justify-content: space-between;
 }
 
-.jobs-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .jobs-list__item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .jobs-list__label {

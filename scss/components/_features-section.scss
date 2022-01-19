@@ -37,13 +37,13 @@
   display: flex;
 }
 
-.features-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .features-list__item {
   width: 270px;
   /* height: 101px; */
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features-list__thumb {

@@ -62,8 +62,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: var(--accent-color);
 }
 
@@ -173,14 +172,14 @@ bg-тёмно серый---2F303A
   display: flex;
 }
 
+.header-nav .nav-menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header-nav .nav-menu__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .nav-menu__link {
@@ -198,6 +197,10 @@ bg-тёмно серый---2F303A
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-menu__link:hover, .nav-menu__link:focus {
+  color: var(--accent-color);
+}
+
 .current-line::after {
   content: "";
   position: absolute;
@@ -210,11 +213,6 @@ bg-тёмно серый---2F303A
 }
 
 .nav-menu .link.current {
-  color: var(--accent-color);
-}
-
-.nav-menu__link:hover,
-.nav-menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -246,8 +244,7 @@ bg-тёмно серый---2F303A
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts__mail--hover:hover,
-.header-contacts__mail--hover:focus {
+.header-contacts__mail--hover:hover, .header-contacts__mail--hover:focus {
   color: var(--accent-color);
 }
 
@@ -267,8 +264,7 @@ bg-тёмно серый---2F303A
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts__tel--hover:hover,
-.header-contacts__tel--hover:focus {
+.header-contacts__tel--hover:hover, .header-contacts__tel--hover:focus {
   color: var(--accent-color);
 }
 
@@ -282,10 +278,11 @@ bg-тёмно серый---2F303A
   --color4: currentColor;
 }
 
-.header-contacts-mail__link:focus,
-.header-contacts-mail__link:hover,
-.header-contacts-tel__link:focus,
-.header-contacts-tel__link:hover {
+.header-contacts-mail__link:focus, .header-contacts-mail__link:hover {
+  --color4: var(--accent-color);
+}
+
+.header-contacts-tel__link:focus, .header-contacts-tel__link:hover {
   --color4: var(--accent-color);
 }
 
@@ -296,7 +293,7 @@ bg-тёмно серый---2F303A
 
 .hero__section {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 /* .overlay {
@@ -399,13 +396,13 @@ bg-тёмно серый---2F303A
   display: flex;
 }
 
-.features-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .features-list__item {
   width: 270px;
   /* height: 101px; */
+}
+
+.features-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features-list__thumb {
@@ -450,12 +447,12 @@ bg-тёмно серый---2F303A
           justify-content: space-between;
 }
 
-.jobs-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .jobs-list__item {
   position: relative;
+}
+
+.jobs-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .jobs-list__label {
@@ -604,14 +601,13 @@ bg-тёмно серый---2F303A
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social--icons-bg {
-  --color5: currentColor;
-}
-
-.team-social__link:hover,
-.team-social__link:focus {
+.team-social__link:hover, .team-social__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-title-color);
+}
+
+.team-social--icons-bg {
+  --color5: currentColor;
 }
 
 .klients__title {
@@ -674,14 +670,13 @@ bg-тёмно серый---2F303A
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.klients-list__icon {
-  --color3: currentColor;
-}
-
-.klients-list__link:hover,
-.klients-list__link:focus {
+.klients-list__link:hover, .klients-list__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.klients-list__icon {
+  --color3: currentColor;
 }
 
 /* .klients-list-item .klients-list-icon:hover,
@@ -705,13 +700,6 @@ bg-тёмно серый---2F303A
 
 .footer-contacts__logo-s {
   color: var(--primary-title-color);
-}
-
-.footer-address-list__mail:hover,
-.footer-address-list__mail:focus,
-.footer-address-list__tel:hover,
-.footer-address-list__tel:focus {
-  color: var(--accent-color);
 }
 
 .footer-address__text {
@@ -740,6 +728,10 @@ bg-тёмно серый---2F303A
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-address-list__mail:hover, .footer-address-list__mail:focus {
+  color: var(--accent-color);
+}
+
 .footer-address-list__tel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,6 +745,10 @@ bg-тёмно серый---2F303A
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-address-list__tel:hover, .footer-address-list__tel:focus {
+  color: var(--accent-color);
 }
 
 .footer-contacts {
@@ -825,10 +821,6 @@ bg-тёмно серый---2F303A
   height: 80px;
 }
 
-.footer-social-list__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .footer-social-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -837,6 +829,10 @@ bg-тёмно серый---2F303A
       -ms-flex-pack: center;
           justify-content: center;
   /* align-items: center; */
+}
+
+.footer-social-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social-list__link {
@@ -858,8 +854,7 @@ bg-тёмно серый---2F303A
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-list__link:focus,
-.footer-social-list__link:hover {
+.footer-social-list__link:focus, .footer-social-list__link:hover {
   background-color: var(--accent-color);
 }
 
@@ -906,6 +901,11 @@ bg-тёмно серый---2F303A
   padding-left: 16px;
 }
 
+.footer-form__input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
 .footer-button-mailing {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -938,11 +938,6 @@ bg-тёмно серый---2F303A
 
 .footer-button-mailing__icon {
   margin-left: 10px;
-}
-
-.footer-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
 }
 
 .backdrop {
@@ -1017,6 +1012,14 @@ bg-тёмно серый---2F303A
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-btn:hover, .modal-btn:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-btn:hover .modal-btn__icon, .modal-btn:focus .modal-btn__icon {
+  fill: var(--accent-color);
+}
+
 .modal-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1034,16 +1037,6 @@ bg-тёмно серый---2F303A
   fill: currentColor;
   width: 15px;
   height: 15px;
-}
-
-.modal-btn:hover .modal-btn__icon,
-.modal-btn:focus .modal-btn__icon {
-  fill: var(--accent-color);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  border-color: var(--accent-color);
 }
 
 .modal-form__title {
@@ -1231,8 +1224,7 @@ bg-тёмно серый---2F303A
           justify-content: center;
 }
 
-.modal-form__button--box-shadow:hover,
-.modal-form__button--box-shadow:focus {
+.modal-form__button--box-shadow:hover, .modal-form__button--box-shadow:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -1273,8 +1265,7 @@ bg-тёмно серый---2F303A
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter__btn--hover:hover,
-.filter__btn--hover:focus {
+.filter__btn--hover:hover, .filter__btn--hover:focus {
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1421,8 +1412,7 @@ bg-тёмно серый---2F303A
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.works__border:hover,
-.works__border:focus {
+.works__border:hover, .works__border:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

@@ -33,6 +33,11 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding-left: 16px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .footer-button-mailing {
@@ -62,9 +67,4 @@
 
 .footer-button-mailing__icon {
   margin-left: 10px;
-}
-
-.footer-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
 }
